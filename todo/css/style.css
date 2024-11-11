@@ -1,0 +1,88 @@
+html{
+    background-color: #7E102C;
+    color: #E1D3CC;
+    font-family: "pacifico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.app{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 
+        4px 4px 0px #7E102C,
+        8px 8px 0px #660d23;
+}
+
+h2{
+    text-align: center;
+    border-bottom: solid 0.15rem #E1D3CC;
+    padding-bottom: 10px;
+}
+
+input,
+button{
+    background-color: #D7A9A8;
+    border: solid 0.15rem #E1D3CC;
+    box-shadow: #660d23 4px 4px 0px 0px;
+    transition: transform 200ms, box-shadow 200ms;
+    border-radius: 0.75rem;
+    font-family: "pacifico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #7E102C;
+    cursor: pointer;
+    margin-left: 10px;   
+}
+/* Animace tlačítka. */
+button:active{
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #660d23 0px 0px 0px 0px;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    list-style: none;
+    font-size: 1.5rem;
+    border: solid 0.15rem #E1D3CC;
+    border-radius: 0.75rem;
+    min-height: 80px;
+    max-height: 80px;
+    margin-bottom: 15px;
+}
+
+
+input[type="checkbox"] {
+    background-color: #D7A9A8;
+    accent-color: #D7A9A8;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+  
+/* Přeškrtnutí textu, když je checkbox zaškrtnutý */
+input[type="checkbox"]:checked ~ span {
+    text-decoration: line-through;
+    color: #888;
+  }
+
